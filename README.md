@@ -68,13 +68,23 @@ pytest -v --cov=.
 
 # Start Application
 
-## Start application with hot reload
+## Start application
 
 ```shell
-uvicorn main:app --reload 
+uvicorn main:app
 ```
 
+Options
+
++ `--host` - set bind host (0.0.0.0 - to bind all interfaces, 127.0.0.1 - default)
++ `--port` - bind tcp port (default 8000)
++ `--reload` - start application with hot reload
+
 # Usage
+
+```
+curl -v http://127.0.0.1:8000/health
+```
 
 ## API documentation
 
