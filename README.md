@@ -34,6 +34,20 @@ add redis url to `.env`
 REDIS_URL=redis://localhost:6379/0
 ```
 
+## Python packages install
+
+Runtime packages
+
+```sh
+pip install -r requirements.txt
+```
+
+Development packages
+
+```sh
+pip install -r requirements-dev.txt
+```
+
 ## Run migrations
 
 DB migrations located in `alembic` directory and based on alembic migrations
